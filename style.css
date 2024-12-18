@@ -193,7 +193,8 @@ div{
     height: auto;
     /* 높이를 자동으로 설정 */
   }
-
+  
+  #info,
   #inf,
   #name,
   #logo,
@@ -212,7 +213,9 @@ div{
     /* 로고 이미지 크기 축소 */
     max-height: 80%;
   }
-
+  
+  .hanst0912,
+  .hanst13,
   .hanst14,
   .hanst15,
   .hanst16,
