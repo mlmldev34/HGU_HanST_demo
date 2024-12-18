@@ -1,5 +1,5 @@
 ## 한동대학교 09~25학번 정리 웹페이지
-[웹 사이트] (https://hguhanstdemo.netlify.app/)
+[웹 사이트](https://hguhanstdemo.netlify.app/)
 ## <순서>
 학번 - 세대명 - 로고 - 슬로건 - 말씀
 ## <설명>
