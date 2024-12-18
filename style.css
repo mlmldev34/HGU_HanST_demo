@@ -1,0 +1,237 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto; /* 가로 스크롤 허용 */
+  overflow-y: hidden; /* 세로 스크롤은 여전히 금지 */
+  margin: 0;
+  padding: 0;
+}
+
+div{
+  text-align: center;
+}
+
+.container {
+  display: flex; /* Flexbox 레이아웃 유지 */
+  justify-content: flex-start; /* 요소를 시작점에서부터 정렬 */
+  flex-wrap: nowrap; /* 줄바꿈 방지 */
+  gap: 0;
+  width: 100%; /* 컨테이너가 내부 요소 크기에 따라 크기 조절 */
+  height: 100%; /* 화면 높이 유지 */
+}
+
+.container > div {
+  flex: 0 0 calc(100% / 7); /* 화면의 1/7씩 차지하도록 설정 */
+  height: 100%;
+}
+
+#info{
+  display: flex;
+  border: 3px solid rgba(0, 0, 0, 0.25);
+  font-family: 'Noto Sans KR';
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  height: 8%;
+}
+
+#info > div > a{
+  text-decoration: none;
+  color: black;
+}
+
+#info > div > a:active{
+  text-decoration: none;
+  color: black;
+}
+
+#info > div > a > img{
+  max-width: 23px;
+  max-height: 23px;
+}
+
+#inf {
+  display: flex;
+  border: 3px solid rgba(0, 0, 0, 0.25);
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  height: 7%;
+}
+
+#name {
+  display: flex;
+  border: 3px solid rgba(0, 0, 0, 0.25);
+  border-top: 0;
+  font-family: 'Noto Sans KR';
+  font-size: 27px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+}
+
+#logo {
+  display: flex;
+  border: 3px solid rgba(0, 0, 0, 0.25);
+  border-top: 0;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+
+#logo>img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#slogan {
+  display: flex;
+  border: 3px solid rgba(0, 0, 0, 0.25);
+  border-top: 0;
+  font-family: 'Noto Sans KR';
+  font-size: 22px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+
+#bible {
+  display: flex;
+  border: 3px solid rgba(0, 0, 0, 0.25);
+  border-top: 0;
+  font-family: 'Noto Sans KR';
+  font-size: 17px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  height: 38%;
+}
+
+.hanst19>div>#text,
+.hanst19>#inf {
+  color: white;
+}
+
+.hanst14 > #logo{
+  background-color: white;
+}
+
+.hanst13 {
+  background-color: rgba(253, 183, 0, 1);
+}
+
+.hanst14 {
+  background-color: rgba(237, 28, 36, 1);
+}
+
+.hanst15 {
+  background-color: rgba(202, 217, 194, 1);
+}
+
+.hanst16 {
+  background-color: rgba(241, 203, 65, 1);
+}
+
+.hanst17 {
+  background-color: rgba(247, 189, 188, 1);
+}
+
+.hanst18 {
+  background-color: rgba(245, 196, 77, 1);
+}
+
+.hanst19 {
+  background-color: rgba(1, 62, 29, 1);
+}
+
+.hanst20 {
+  background-color: rgba(0, 158, 143, 1);
+}
+
+.hanst21 {
+  background-color: rgba(164, 196, 234, 1);
+}
+
+.hanst22 {
+  background-color: rgba(186, 169, 203, 1);
+}
+
+.hanst23 {
+  background-color: rgba(214, 230, 193, 1);
+}
+
+.hanst24 {
+  background-color: rgba(253, 176, 101, 1);
+}
+
+.hanst25 {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* 모바일 최적화 */
+@media screen and (max-width: 768px) {
+  /* 화면 너비가 768px 이하일 때 적용 */
+
+  .container {
+    flex-direction: column;
+    /* 요소를 세로로 배치 */
+    gap: 5px;
+    /* 간격을 조정 */
+  }
+
+  .container>div {
+    flex: none;
+    /* 각 요소의 크기를 고정 */
+    height: auto;
+    /* 높이를 자동으로 설정 */
+  }
+
+  #inf,
+  #name,
+  #logo,
+  #slogan,
+  #bible {
+    font-size: 16px;
+    /* 폰트 크기 축소 */
+    height: auto;
+    /* 각 요소의 높이를 자동으로 조절 */
+    padding: 10px;
+    /* 여백 추가 */
+  }
+
+  #logo>img {
+    max-width: 80%;
+    /* 로고 이미지 크기 축소 */
+    max-height: 80%;
+  }
+
+  .hanst14,
+  .hanst15,
+  .hanst16,
+  .hanst17,
+  .hanst18,
+  .hanst19,
+  .hanst20,
+  .hanst21,
+  .hanst22,
+  .hanst23,
+  .hanst24,
+  .hanst25 {
+    padding: 5px;
+    /* 각 색상 섹션에 여백 추가 */
+  }
+
+  html,
+  body {
+    overflow-y: auto;
+    /* 스크롤 허용 */
+  }
+}
