@@ -1,0 +1,155 @@
+[
+  {
+    "year": "09학번",
+    "name": "느혜미야의 세대",
+    "logo": "?",
+    "slogan": "",
+    "bibleText": "",
+    "bibleReference": "",
+    "color": "#808080"
+  },
+  {
+    "year": "10학번",
+    "name": "상상하는 세대",
+    "logo": "?",
+    "slogan": "",
+    "bibleText": "",
+    "bibleReference": "",
+    "color": "#808080"
+  },
+  {
+    "year": "11학번",
+    "name": "회복의 세대",
+    "logo": "?",
+    "slogan": "",
+    "bibleText": "",
+    "bibleReference": "",
+    "color": "#808080"
+  },
+  {
+    "year": "12학번",
+    "name": "사랑의 세대",
+    "logo": "?",
+    "slogan": "",
+    "bibleText": "",
+    "bibleReference": "",
+    "color": "#808080"
+  },
+  {
+    "year": "13학번",
+    "name": "은혜의 세대",
+    "logo": "assets/2013HanSTlogo.png",
+    "slogan": "By Grace",
+    "bibleText": "주의 성령이 내게 임하셨으니 이는 가난한 자에게 복음을 전하게 하시려고 내게 기름을 부으시고 나를 보내사 포로 된 자에게 자유를, 눈 먼 자에게 다시 보게 함을 전파하며 눌린 자를 자유롭게 하고 주의 은혜의 해를 전파하게 하려 하심이라 하였더라",
+    "bibleReference": "(눅4:18-19)",
+    "color": "#fdb700"
+  },
+  {
+    "year": "14학번",
+    "name": "화평의 세대",
+    "logo": "assets/2014HanSTlogo.png",
+    "slogan": "ONE IN CHRIST",
+    "bibleText": "그의 안에서 건물마다 서로 연결하여 주 안에서 성전이 되어가고 너희도 성령 안에서 하나님이 거하실 처소가 되기 위하여 그리스도 예수 안에서 함께 지어져 가느니라",
+    "bibleReference": "(엡2:21-22)",
+    "color": "#ed1c24"
+  },
+  {
+    "year": "15학번",
+    "name": "동행의 세대",
+    "logo": "assets/2015HanSTlogo.png",
+    "slogan": "세상을 변화시키는 첫걸음",
+    "bibleText": "하나님이 능히 모든 은혜를 너희에게 넘치게 하시나니 이는 너희로 모든 일에 항상 모든 것이 넉넉하여 모든 착한 일을 넘치게 하게 하려 하심이라",
+    "bibleReference": "(고후9:8)",
+    "color": "#cad9c2"
+  },
+  {
+    "year": "16학번",
+    "name": "기쁨의 세대",
+    "logo": "assets/2016HanSTlogo.png",
+    "slogan": "Reveal the Light!",
+    "bibleText": "그러므로 그리스도 안에 무슨 권면이나 사랑의 무슨 위로나 성령의 무슨 교제나 긍휼이나 자비가 있거든 마음을 같이하여 같은 사랑을 가지고 뜻을 합하며 한마음을 품어 아무 일에든지 다툼이나 허영으로 하지 말고 오직 겸손한 마음으로 각각 자기보다 남을 낫게 여기고 각각 자기 일을 돌볼뿐더러 또한 각각 다른 사람들의 일을 돌보아 나의 기쁨을 충만하게 하라",
+    "bibleReference": "(빌2:1-4)",
+    "color": "#f1cb41"
+  },
+  {
+    "year": "17학번",
+    "name": "꿈꾸는 세대",
+    "logo": "assets/2017HanSTlogo.png",
+    "slogan": "우리가 지켜야할 아름다운 Up Dream",
+    "bibleText": "너는 그리스도 예수 안에 있는 믿음과 사랑으로써 내게 들은 바 바른 말을 본받아 지키고 우리 안에 거하시는 성령으로 말미암아 네게 부탁한 아름다운 것을 지키라",
+    "bibleReference": "(딤후1:13-14)",
+    "color": "#f7bdba"
+  },
+  {
+    "year": "18학번",
+    "name": "소망의 세대",
+    "logo": "assets/2018HanSTlogo.png",
+    "slogan": "Look Beyond",
+    "bibleText": "나의 영혼아 잠잠히 하나님만 바라라 무릇 나의 소망이 그로부터 나오는도다 오직 그만이 나의 반석이시요 나의 구원이시요 나의 요새이시니 내가 흔들리지 아니하리로다",
+    "bibleReference": "(시62:5-6)",
+    "color": "#f5c44d"
+  },
+  {
+    "year": "19학번",
+    "name": "약속의 세대",
+    "logo": "assets/2019HanSTlogo.png",
+    "slogan": "Now unto Him.",
+    "bibleText": "능히 너희를 보호하사 거침이 없게 하시고 너희로 그 영광 앞에 흠이 없이 기쁨으로 서게 하실 이",
+    "bibleReference": "(유1:24)",
+    "color": "#013e1d"
+  },
+  {
+    "year": "20학번",
+    "name": "빛나는 세대",
+    "logo": "assets/2020HanSTlogo.png",
+    "slogan": "Let there be light",
+    "bibleText": "너희는 세상의 빛이라 산 위에 있는 동네가 숨겨지지 못할 것이요 사람이 등불을 켜서 말 아래에 두지 아니하고 등경 위에 두나니 이러므로 집 안 모든 사람에게 비치느니라",
+    "bibleReference": "(마5:14-15)",
+    "color": "#009e8f"
+  },
+  {
+    "year": "21학번",
+    "name": "함께하는 세대",
+    "logo": "assets/2021HanSTlogo.png",
+    "slogan": ["I, with You", "Handong, with You", "God, with You","|","Together, with You"],
+    "bibleText": "그의 안에서 건물마다 서로 연결하여 주 안에서 성전이 되어가고 너희도 성령 안에서 하나님이 거하실 처소가 되기 위하여 그리스도 예수 안에서 함께 지어져 가느니라",
+    "bibleReference": "(엡2:21-22)",
+    "color": "#a4c4ea"
+  },
+  {
+    "year": "22학번",
+    "name": "온유의 세대",
+    "logo": "assets/2022HanSTlogo.png",
+    "slogan": "Eyes On You",
+    "bibleText": "나는 마음이 온유하고 겸손하니 나의 멍에를 메고 내게 배우라 그리하면 너희 마음이 쉼을 얻으리니",
+    "bibleReference": "(마11:29)",
+    "color": "#baa9cb"
+  },
+  {
+    "year": "23학번",
+    "name": "축복의 세대",
+    "logo": "assets/2023HanSTlogo.png",
+    "slogan": "Be Bliss, Be Blessed",
+    "bibleText": "여호와는 네게 복을 주시고 너를 지키시기를 원하며 여호와는 그의 얼굴을 네게 비추사 은혜 베푸시기를 원하며 여호와는 그 얼굴을 네게로 향하여 드사 평강 주시기를 원하노라 할지니라",
+    "bibleReference": "(민6:24-26)",
+    "color": "#d6e6c1"
+  },
+  {
+    "year": "24학번",
+    "name": "부르심의 세대",
+    "logo": "assets/2024HanSTlogo.png",
+    "slogan": "Follow the Light, Follow the Calling",
+    "bibleText": "하나님이 우리를 구원하사 거룩하신 소명으로 부르심은 우리의 행위대로 하심이 아니요 오직 자기의 뜻과 영원 전부터 그리스도 예수 안에서 우리에게 주신 은혜대로 하심이라",
+    "bibleReference": "(딤후1:9)",
+    "color": "#fdb065"
+  },
+  {
+    "year": "25학번",
+    "name": "",
+    "logo": "assets/",
+    "slogan": "",
+    "bibleText": "",
+    "bibleReference": "",
+    "color": "#808080"
+  }
+]

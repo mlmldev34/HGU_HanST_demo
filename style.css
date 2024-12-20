@@ -1,240 +1,186 @@
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow-x: auto; /* 가로 스크롤 허용 */
-  overflow-y: hidden; /* 세로 스크롤은 여전히 금지 */
+/* 전체 스타일 */
+body,
+html {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #333;
 }
 
-div{
+body {
+  background: linear-gradient(to bottom, #003366, #666666, #CC9900);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+/* 헤더 스타일 */
+header {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: #007acc;
+  font-size: 14px;
+}
+
+header img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+/* 카드 컨테이너 */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 카드 스타일 */
+.card {
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: #333;
+  overflow: hidden;
+  background-color: #ffffff;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 로고 컨테이너 */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: auto;
+  /* 높이는 JS에서 동기화 */
+}
+
+/* 로고 이미지 */
+.logo-container img {
+  max-width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 슬로건 */
+.slogan-container {
+  text-align: center;
+  overflow: hidden;
+  height: auto;
+  /* 높이는 JS에서 동기화 */
+}
+
+.slogan-container p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.4;
   text-align: center;
 }
 
-.container {
-  display: flex; /* Flexbox 레이아웃 유지 */
-  justify-content: flex-start; /* 요소를 시작점에서부터 정렬 */
-  flex-wrap: nowrap; /* 줄바꿈 방지 */
-  gap: 0;
-  width: 100%; /* 컨테이너가 내부 요소 크기에 따라 크기 조절 */
-  height: 100%; /* 화면 높이 유지 */
+/* 말씀 */
+.bible-container {
+  text-align: left;
+  overflow: hidden;
+  height: auto;
+  /* 높이는 JS에서 동기화 */
 }
 
-.container > div {
-  flex: 0 0 calc(100% / 7); /* 화면의 1/7씩 차지하도록 설정 */
-  height: 100%;
+.bible-container blockquote {
+  font-size: 14px;
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+  border-left: 4px solid #007acc;
+  padding-left: 15px;
+  margin: 0;
+  white-space: pre-line;
+  /* 개행 허용 */
 }
 
-#info{
-  display: flex;
-  border: 3px solid rgba(0, 0, 0, 0.25);
-  font-family: 'Noto Sans KR';
-  font-size: 16px;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;
-  height: 8%;
-}
-
-#info > div > a{
-  text-decoration: none;
-  color: black;
-}
-
-#info > div > a:active{
-  text-decoration: none;
-  color: black;
-}
-
-#info > div > a > img{
-  max-width: 23px;
-  max-height: 23px;
-}
-
-#inf {
-  display: flex;
-  border: 3px solid rgba(0, 0, 0, 0.25);
-  font-family: 'Noto Sans KR';
+/* 학번 스타일 */
+.card h2 {
   font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+/* 세대명 스타일 */
+.card h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+/* 성경 구절의 참고 구절 개행 처리 */
+.bible-container blockquote::after {
+  content: attr(data-reference);
+  display: block;
+  /* 블록으로 표시해 항상 개행 */
+  font-size: 13px;
   font-weight: bold;
-  justify-content: center;
-  align-items: center;
-  height: 7%;
+  margin-top: 5px;
+  color: #007acc;
+  text-align: right;
 }
 
-#name {
-  display: flex;
-  border: 3px solid rgba(0, 0, 0, 0.25);
-  border-top: 0;
-  font-family: 'Noto Sans KR';
-  font-size: 27px;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;
-  height: 15%;
-}
-
-#logo {
-  display: flex;
-  border: 3px solid rgba(0, 0, 0, 0.25);
-  border-top: 0;
-  font-family: 'Noto Sans KR';
-  font-size: 20px;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;
-  height: 20%;
-}
-
-#logo>img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-#slogan {
-  display: flex;
-  border: 3px solid rgba(0, 0, 0, 0.25);
-  border-top: 0;
-  font-family: 'Noto Sans KR';
-  font-size: 22px;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;
-  height: 20%;
-}
-
-#bible {
-  display: flex;
-  border: 3px solid rgba(0, 0, 0, 0.25);
-  border-top: 0;
-  font-family: 'Noto Sans KR';
-  font-size: 17px;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;
-  height: 38%;
-}
-
-.hanst19>div>#text,
-.hanst19>#inf {
-  color: white;
-}
-
-.hanst14 > #logo{
-  background-color: white;
-}
-
-.hanst13 {
-  background-color: rgba(253, 183, 0, 1);
-}
-
-.hanst14 {
-  background-color: rgba(237, 28, 36, 1);
-}
-
-.hanst15 {
-  background-color: rgba(202, 217, 194, 1);
-}
-
-.hanst16 {
-  background-color: rgba(241, 203, 65, 1);
-}
-
-.hanst17 {
-  background-color: rgba(247, 189, 188, 1);
-}
-
-.hanst18 {
-  background-color: rgba(245, 196, 77, 1);
-}
-
-.hanst19 {
-  background-color: rgba(1, 62, 29, 1);
-}
-
-.hanst20 {
-  background-color: rgba(0, 158, 143, 1);
-}
-
-.hanst21 {
-  background-color: rgba(164, 196, 234, 1);
-}
-
-.hanst22 {
-  background-color: rgba(186, 169, 203, 1);
-}
-
-.hanst23 {
-  background-color: rgba(214, 230, 193, 1);
-}
-
-.hanst24 {
-  background-color: rgba(253, 176, 101, 1);
-}
-
-.hanst25 {
-  background-color: rgba(255, 255, 255, 1);
-}
-
-/* 모바일 최적화 */
+/* 반응형 스타일 */
 @media screen and (max-width: 768px) {
-  /* 화면 너비가 768px 이하일 때 적용 */
-
   .container {
-    flex-direction: column;
-    /* 요소를 세로로 배치 */
-    gap: 5px;
-    /* 간격을 조정 */
-  }
-
-  .container>div {
-    flex: none;
-    /* 각 요소의 크기를 고정 */
-    height: auto;
-    /* 높이를 자동으로 설정 */
-  }
-  
-  #info,
-  #inf,
-  #name,
-  #logo,
-  #slogan,
-  #bible {
-    font-size: 16px;
-    /* 폰트 크기 축소 */
-    height: auto;
-    /* 각 요소의 높이를 자동으로 조절 */
+    grid-template-columns: 1fr;
+    gap: 15px;
     padding: 10px;
-    /* 여백 추가 */
   }
 
-  #logo>img {
-    max-width: 80%;
-    /* 로고 이미지 크기 축소 */
-    max-height: 80%;
-  }
-  
-  .hanst0912,
-  .hanst13,
-  .hanst14,
-  .hanst15,
-  .hanst16,
-  .hanst17,
-  .hanst18,
-  .hanst19,
-  .hanst20,
-  .hanst21,
-  .hanst22,
-  .hanst23,
-  .hanst24,
-  .hanst25 {
-    padding: 5px;
-    /* 각 색상 섹션에 여백 추가 */
+  .card {
+    padding: 15px;
   }
 
-  html,
-  body {
-    overflow-y: auto;
-    /* 스크롤 허용 */
+  .logo-container img {
+    max-width: 80px;
+    /* 모바일에서 로고 크기 조정 */
+  }
+
+  .slogan-container p {
+    font-size: 14px;
+  }
+
+  .bible-container blockquote {
+    font-size: 13px;
+  }
+
+  .card h2 {
+    font-size: 18px;
+  }
+
+  .card h3 {
+    font-size: 16px;
   }
 }
