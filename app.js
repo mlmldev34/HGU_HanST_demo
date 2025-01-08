@@ -105,4 +105,4 @@ fetch("text.json")
       container.appendChild(card);
     });
   })
-  .catch((error) => console.error("Error loading data:", error));
+  .catch((error) => console.error("Error", error));
