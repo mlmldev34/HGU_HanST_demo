@@ -111,7 +111,13 @@
     "year": "21학번",
     "name": "함께하는 세대",
     "logo": "assets/2021HanSTlogo.png",
-    "slogan": ["I, with You", "Handong, with You", "God, with You","|","Together, with You"],
+    "slogan": [
+      "I, with You",
+      "Handong, with You",
+      "God, with You",
+      "|",
+      "Together, with You"
+    ],
     "bibleText": "그의 안에서 건물마다 서로 연결하여 주 안에서 성전이 되어가고 너희도 성령 안에서 하나님이 거하실 처소가 되기 위하여 그리스도 예수 안에서 함께 지어져 가느니라",
     "bibleReference": "(엡2:21-22)",
     "color": "#a4c4ea"
@@ -145,11 +151,11 @@
   },
   {
     "year": "25학번",
-    "name": "",
-    "logo": "?",
-    "slogan": "",
-    "bibleText": "",
-    "bibleReference": "",
-    "color": "#808080"
+    "name": "세워가는 세대",
+    "logo": "assets/2025HanSTlogo.png",
+    "slogan": "Step In, Build Out!",
+    "bibleText": "여호와가 너를 항상 인도하여 메마른 곳에서도 네 영혼을 만족하게 하며 네 뼈를 견고하게 하리니 너는 물 댄 동산 같겠고 물이 끊어지지 아니하는 샘 같을 것이라 네게서 날 자들이 오래 황폐된 곳들을 다시 세울 것이며 너는 역대의 파괴된 기초를 쌓으리니 너를 일컬어 무너진 데를 보수하는 자라 할 것이며 길을 수축하여 거할 곳이 되게 하는 자라 하리라",
+    "bibleReference": "(사58:11-12)",
+    "color": "#EEE1AB"
   }
 ]
